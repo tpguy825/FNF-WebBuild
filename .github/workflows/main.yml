@@ -3,6 +3,7 @@ on: pull_request
 
 jobs:
     build:
+        permissions: write-all
         name: calibreapp/image-actions
         runs-on: ubuntu-latest
         steps:
