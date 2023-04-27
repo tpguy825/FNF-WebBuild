@@ -1,0 +1,29 @@
+{
+	"lineEnds": {
+		"leftCurly": "after",
+		"rightCurly": "both",
+		"objectLiteralCurly": {
+			"leftCurly": "after"
+		},
+		"emptyCurly": "noBreak"
+	},
+	"sameLine": {
+		"ifElse": "next",
+		"doWhile": "next",
+		"tryBody": "next",
+		"tryCatch": "next"
+	},
+	"whitespace": {
+		"functionTypeHaxe4Policy": "around",
+		"colonPolicy": "none",
+		"caseColonPolicy": "onlyAfter",
+		"objectFieldColonPolicy": "after",
+		"typeHintColonPolicy": "after",
+		"typeCheckColonPolicy": "before",
+		"ternaryPolicy": "around",
+		"typeParamOpenPolicy": "none",
+		"typeParamClosePolicy": "none",
+		"arrowFunctionsPolicy": "around",
+		"functionTypeHaxe3Policy": "around"
+	}
+}
