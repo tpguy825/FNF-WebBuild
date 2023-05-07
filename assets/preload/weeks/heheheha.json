@@ -14,7 +14,8 @@
 		["Betrayal", "black", [146, 113, 253]],
 		["Friends To Your End", "dad", [146, 113, 253]],
 		["Billionaire-brawl", "dad", [146, 113, 253]],
-		["Peeing", "dad", [146, 113, 253]]
+		["Peeing", "dad", [146, 113, 253]],
+		["mimicry", "dad", [146, 113, 253]]
 	],
 	"weekCharacters": ["dad", "bf", "gf"],
 	"hiddenUntilUnlocked": false,
