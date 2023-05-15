@@ -395,7 +395,7 @@ class FreeplayState extends MusicBeatState {
 			if (FlxG.keys.pressed.SHIFT) {
 				LoadingState.loadAndSwitchState(new ChartingState());
 			}
-			else if (multipleDownSongs.contains(songs[curSelected].songName.toLowerCase())) {
+			else if (multipleDownSongs.contains(songs[curSelected].songName.toLowerCase()) && ClientPrefs.lotsOfNotesWarning) {
 				LoadingState.loadAndSwitchState(new MultipleDownWarning());
 			}
 			else {
@@ -452,8 +452,6 @@ class FreeplayState extends MusicBeatState {
 			curSelected = songs.length - 1;
 		if (curSelected >= songs.length)
 			curSelected = 0;
-
-		trace(songs[curSelected].songName.toLowerCase());
 
 		var newColor: Int = songs[curSelected].color;
 		if (newColor != intendedColor) {

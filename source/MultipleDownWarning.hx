@@ -38,11 +38,12 @@ class MultipleDownWarning extends MusicBeatState {
 			var back: Bool = controls.BACK;
 			if (controls.ACCEPT || back) {
 				leftState = true;
+				ClientPrefs.lotsOfNotesWarning = false;
 				FlxTransitionableState.skipNextTransIn = true;
 				FlxTransitionableState.skipNextTransOut = true;
 				if (!back) {
 					FlxG.sound.volume = 1;
-					FlxG.sound.play(Paths.sound('cancelMenu'));
+					FlxG.sound.play(Paths.sound('confirmMenu'));
 					FlxTween.tween(warnText, {alpha: 0}, 1, {
 						onComplete: function(twn: FlxTween) {
 							MusicBeatState.switchState(new PlayState());
@@ -51,7 +52,7 @@ class MultipleDownWarning extends MusicBeatState {
 				}
 				else {
 					FlxG.sound.volume = 1;
-					FlxG.sound.play(Paths.sound('confirmMenu'));
+					FlxG.sound.play(Paths.sound('cancelMenu'));
 					FlxTween.tween(warnText, {alpha: 0}, 1, {
 						onComplete: function(twn: FlxTween) {
 							MusicBeatState.switchState(new FreeplayState());
