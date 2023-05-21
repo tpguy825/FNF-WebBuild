@@ -85,11 +85,11 @@ class PlayState extends MusicBeatState {
 
 	public static var ratingStuff: Array<Dynamic> = [
 		['How', 0.2], // From 0% to 19%
-		['S***', 0.4], // From 20% to 39%
+		['Shit', 0.4], // From 20% to 39%
 		['Bad', 0.5], // From 40% to 49%
 		['Bruh', 0.6], // From 50% to 59%
 		['Meh', 0.69], // From 60% to 68%
-		['Nice', 0.7], // 69%
+		['haha', 0.7], // 69%
 		['Good', 0.8], // From 70% to 79%
 		['Great', 0.9], // From 80% to 89%
 		['Sick!', 1], // From 90% to 99%
@@ -377,7 +377,7 @@ class PlayState extends MusicBeatState {
 		rating.noteSplash = false;
 		ratingsData.push(rating);
 
-		var rating: Rating = new Rating('s***');
+		var rating: Rating = new Rating('shit');
 		rating.ratingMod = 0;
 		rating.score = 50;
 		rating.noteSplash = false;
@@ -3200,7 +3200,13 @@ class PlayState extends MusicBeatState {
 			FlxG.sound.music.pause();
 			vocals.pause();
 		}
-		openSubState(new PauseSubState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
+		openSubState(new PauseSubState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y, {
+			sicks: sicks,
+			goods: goods,
+			bads: bads,
+			shits: shits,
+			misses: songMisses,
+		}));
 		// }
 
 		#if desktop
