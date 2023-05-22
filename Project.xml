@@ -70,11 +70,11 @@
 	<section if="PRELOAD_ALL">
 		<library name="songs"         preload="true" />
 		<library name="shared"        preload="true" /> 
-		<library name="week2"         preload="false" /> <!-- change back to true before exporting -->
-		<library name="week3"         preload="false" /> <!-- change back to true before exporting -->
+		<library name="week2"         preload="true" />
+		<library name="week3"         preload="true" />
 		<library name="week4"         preload="true" />
-		<library name="week5"         preload="false" /> <!-- change back to true before exporting -->
-		<library name="week6"         preload="false" /> <!-- change back to true before exporting -->
+		<library name="week5"         preload="true" />
+		<library name="week6"         preload="true" />
 		<library name="week7"         preload="true" />
 	</section>
 	
